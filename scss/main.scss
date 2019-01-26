@@ -1,10 +1,10 @@
-@import 'config';
-@import 'menu';
-
+@import "config";
+@import "menu";
+@import "mobile";
 
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
 body {
   @include background;
