@@ -80,9 +80,9 @@ main {
   }
 }
 
-.about-info {
+.informacoes {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 20px;
   grid-template-areas:
     "bioimage bio bio"
     "job1 job2 job3";
@@ -90,26 +90,37 @@ main {
 
   .bio-image {
     grid-area: bioimage;
-    margin: auto;
+    margin-top: 10px;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border: $secondary-color 2px solid;
+    padding: 10px;
   }
 
   .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .job-1 {
     grid-area: job1;
+
+    h3 {
+      background: yellow;
+    }
   }
 
   .job-2 {
     grid-area: job2;
+    h3 {
+      background: yellow;
+    }
   }
 
   .job-3 {
     grid-area: job3;
+    h3 {
+      background: yellow;
+    }
   }
 
   .job {
