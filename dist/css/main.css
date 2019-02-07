@@ -63,7 +63,7 @@
     font-family: "Times New Roman", Times, serif;
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
@@ -93,7 +93,6 @@ body {
   color: #000;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   font-family: "Times New Roman", Times, serif; }
   body#bg-img {
@@ -212,8 +211,9 @@ main {
 .projetos {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(4, 1fr); }
   .projetos img {
+    border-radius: 15px;
     -webkit-box-shadow: 7px 11px 10px -4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 7px 11px 10px -4px rgba(0, 0, 0, 0.75);
     box-shadow: 7px 11px 10px -4px rgba(0, 0, 0, 0.75);
@@ -277,11 +277,13 @@ main {
 
 .btn-dark {
   background: gray;
-  color: #fff; }
+  color: #fff;
+  border-radius: 10px; }
 
 .btn-light {
   background: white;
-  color: #333; }
+  color: #333;
+  border-radius: 10px; }
 
 #main-footer {
   display: block;
