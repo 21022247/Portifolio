@@ -92,7 +92,10 @@
       width: 250px;
       height: 250px;
       border-radius: 50%;
-      background: url("/img/portrait.jpg");
+      background: url("/img/victorLopes.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       border: solid 2px $secondary-color;
     }
   }

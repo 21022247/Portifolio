@@ -56,7 +56,10 @@
       width: 250px;
       height: 250px;
       border-radius: 50%;
-      background: url("/img/portrait.jpg");
+      background: url("/img/victorLopes.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       border: solid 2px #eece1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -192,6 +195,25 @@ main {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px solid #fff;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1rem;
+      background: #eece1a;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
