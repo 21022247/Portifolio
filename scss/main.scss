@@ -14,6 +14,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
+p {
+  text-align: justify;
+  text-align-last: left;
+  line-height: 1.8em;
+}
 
 // Headings
 h1,
@@ -23,12 +28,12 @@ h3 {
   font-weight: 400;
 
   &.lg-heading {
-    font-size: 6rem;
+    font-size: 4rem;
   }
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba(lighten(rgba(90, 89, 89, 0.4), 2), 0.2);
   }
 }
 
@@ -106,6 +111,9 @@ main {
 
     h3 {
       background: yellow;
+      text-align: center;
+      padding: 5px;
+      display: grid;
     }
   }
 
@@ -113,6 +121,9 @@ main {
     grid-area: job2;
     h3 {
       background: yellow;
+      text-align: center;
+      padding: 5px;
+      display: grid;
     }
   }
 
@@ -120,6 +131,9 @@ main {
     grid-area: job3;
     h3 {
       background: yellow;
+      text-align: center;
+      padding: 5px;
+      display: grid;
     }
   }
 
@@ -127,17 +141,28 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+    background-color: rgba(197, 197, 197, 0.2);
+    border-bottom-right-radius: 10px;
+    -webkit-box-shadow: 7px 11px 19px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 11px 19px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 11px 19px -4px rgba(0, 0, 0, 0.75);
   }
 }
 
 //projetos
+#projetos {
+  background: #fff;
+}
 .projetos {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
   img {
+    -webkit-box-shadow: 7px 11px 10px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 11px 10px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 11px 10px -4px rgba(0, 0, 0, 0.75);
+    padding: 5px;
     width: 100%;
-    // border: 3px solid rgba(184, 8, 8, 0.7);
 
     &:hover {
       opacity: 0.5;
@@ -145,12 +170,22 @@ main {
       @include easeOut;
     }
   }
+
   .item {
-    border: 2px solid #000;
+    .btn-light {
+      background: rgb(27, 141, 235);
+      color: #fff;
+    }
+    .btn-dark {
+      background: rgb(27, 235, 114);
+      color: #fff;
+    }
+
+    border-bottom: 2px solid black;
   }
 }
 
-//contact
+//contato
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -182,7 +217,8 @@ main {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
   &:hover {
     background: $secondary-color;
     color: set-text-colo($secondary-color);
@@ -200,12 +236,43 @@ main {
   background: lighten($primary-color, 50);
   color: #333;
 }
+
+// Radapé
 #main-footer {
-  text-align: center;
+  display: block;
+  background: rgba(lighten(rgba(90, 89, 89, 0.1), 2), 0.2);
   padding: 1rem;
-  background: darken($primary-color, 10);
-  color: set-text-color($primary-color);
-  height: 6px;
+  height: 100%;
+  text-align: center;
+  span {
+    color: $secondary-color;
+  }
+  .icons-footer {
+    display: inline-block;
+    margin-top: 1rem;
+
+    #tw {
+      color: skyblue;
+    }
+    #ln {
+      color: blue;
+    }
+    #git {
+      color: black;
+    }
+
+    a {
+      padding: 0.5rem;
+    }
+
+    &#home {
+      overflow: hidden;
+      h1 {
+        margin-top: 20vh;
+        //   viewpor height
+      }
+    }
+  }
 }
 
 @import "mobile";

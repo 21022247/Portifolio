@@ -55,7 +55,7 @@
           <h1 class="text-secondary">Victor Lopes</h1>
           <!-- <h6>Web developer <span style="color: #270aca"> - junior</span></h6> -->
           <p>
-            Tecnico em Informática pela
+            &nbsp;&nbsp;&nbsp;Tecnico em Informática pela
             <a
               href="https://www.cps.sp.gov.br/tag/etec-pref-jose-esteves/"
               target="_blank"
@@ -85,14 +85,14 @@
         </div>
 
         <div class="job job-1">
-          <h3>Profissional</h3>
+          <h3>Profissão</h3>
           <h6>
             Front End Developer jr
             <hr />
           </h6>
           <p>
-            Desenvolvedor junior de aplicações web para dispositvos android e
-            desktop.
+            &nbsp;&nbsp;Desenvolvedor junior de aplicações web para dispositvos
+            android e desktop.
           </p>
         </div>
 
@@ -103,8 +103,8 @@
             <hr />
           </h6>
           <p>
-            Sinto paixão enorme por corridas, principalmente as que envolvem o
-            corpo.
+            &nbsp;&nbsp;&nbsp;Sinto paixão enorme por corridas, principalmente
+            as que envolvam o corpo humano.
           </p>
         </div>
 
@@ -115,15 +115,57 @@
             <hr />
           </h6>
           <p>
-            Tenho a passagem de Jesus Cristo, como sendo o maior exemplo de
-            liderança de todos os tempos, pois mesmo após a sua morte ele
-            continua conquistando milhares de seguidores em todo o mundo.
+            &nbsp;&nbsp;&nbsp;Tenho a passagem de Jesus Cristo, como sendo o
+            maior exemplo de liderança de todos os tempos, pois mesmo após a sua
+            morte ele continua conquistando milhares de seguidores em todo o
+            mundo.
           </p>
         </div>
       </div>
     </main>
 
-    <footer id="main-footer">Copyright &copy; 2019</footer>
+    <footer id="main-footer">
+      <div class="icons-footer">
+        <a href="https://twitter.com/LopesVct" target="_blank" id="tw">
+          <i class="fab fa-twitter fa-2x"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/victor-sousa-lopes"
+          target="_blank"
+          id="ln"
+        >
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/21022247" target="_blank" id="git">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <br /><span>2019</span>
+      </div>
+    </footer>
+
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+      (function() {
+        var options = {
+          whatsapp: "+5511986917325", // Número do WhatsApp
+          company_logo_url: "http://127.0.0.1:5500/dist/index.html", // URL com o logo da empresa
+          greeting_message: "", // Texto principal
+          call_to_action: "Olá no que posso ajudar?", // Chamada para ação
+          position: "left" // Posição do widget na página 'right' ou 'left'
+        };
+        var proto = document.location.protocol,
+          host = "whatshelp.io",
+          url = proto + "//static." + host;
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = url + "/widget-send-button/js/init.js";
+        s.onload = function() {
+          WhWidgetSendButton.init(host, proto, options);
+        };
+        var x = document.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s, x);
+      })();
+    </script>
   </body>
 </html>
