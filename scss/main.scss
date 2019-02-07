@@ -47,6 +47,7 @@ header {
   color: $secondary-color;
 }
 
+//main icons
 main {
   padding: 4rem;
   // height: 100%;
@@ -55,13 +56,18 @@ main {
   .icons {
     margin-top: 1rem;
 
-    a {
-      padding: 0.4rem;
+    #tw {
+      color: skyblue;
+    }
+    #ln {
+      color: blue;
+    }
+    #git {
+      color: black;
+    }
 
-      &:hover {
-        color: $secondary-color;
-        @include easeOut();
-      }
+    a {
+      padding: 0.5rem;
     }
   }
 

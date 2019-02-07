@@ -150,11 +150,14 @@ main {
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
+    main .icons #tw {
+      color: skyblue; }
+    main .icons #ln {
+      color: blue; }
+    main .icons #git {
+      color: black; }
     main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: #000d36;
-        transition: all 0.5s ease-out; }
+      padding: 0.5rem; }
   main#home {
     overflow: hidden; }
     main#home h1 {
