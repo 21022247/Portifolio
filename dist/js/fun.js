@@ -4,8 +4,7 @@
   var options = {
     whatsapp: "+5511986917325", // Número do WhatsApp
     company_logo_url: "http://127.0.0.1:5500/dist/index.html", // URL com o logo da empresa
-    greeting_message:
-      "Victor Lopes - Desenvolvedor de Aplicações web para Android e Smartphone", // Texto principal
+    greeting_message:// Texto principal
     call_to_action: "Olá no que posso ajudar?", // Chamada para ação
     position: "left" // Posição do widget na página 'right' ou 'left'
   };
